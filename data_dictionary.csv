@@ -1,0 +1,8 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description
+doc_id,String,DOC002,DOC034,DOC013,No,Unique identifier assigned to the source document. Multiple chunks may share the same document ID.
+doc_type,String,TXT,TXT,HTML,No,"Format or type of the source document, such as TXT, HTML, Markdown, Word, or PDF."
+chunk_id,String,CHK00001,CHK00002,CHK00003,No,Unique identifier assigned to an individual text chunk extracted from a document.
+word_count,Integer,457,302,52,No,Number of words contained in the corresponding text chunk.
+retrieval_score,Float,0.5962,0.7397,0.7735,No,Relevance or similarity score associated with retrieving the chunk for a query. Higher values indicate a stronger retrieval match.
+query_type,String,analytical,factual,comparative,No,"Category of the user query: factual, analytical, comparative, procedural, or summarization."
+answer_quality_score,Float,0.942,0.976,0.66,No,Score representing the assessed quality of the answer associated with the query and retrieved content.
